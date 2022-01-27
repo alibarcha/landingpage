@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box;
+}
+/*  components */
+.sub-tittle{
+    font-size: 35px;
+    color: #1e272e;
+    text-transform: capitalize;
+    font-family:  Lato, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+
+/* banner */
+.banner{
+    height: 100vh;
+    background-color: red;
+    background-image: url(../images/img/bg-masthead.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    
+}
+.overlay{
+    background-color: rgba(0, 0, 0, 0.9);  
+}
+.banner .tittle{
+    font-size: 50px;
+    text-align: center;
+
+}
+.banner form input{
+    padding: 30px 100px 30px 30px;
+}
+
+/* *******icon section ************* */
+.icon-section{
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+}
+.icon-section i{
+    font-size: 60px;
+    color: rgb(10, 88, 202);
+    padding: 20px 0;
+    cursor: pointer;
+
+} 
+.icon-section p{
+    padding: 0 4px;
+    font-size: 20px;
+}
+
+/* ************image-show********** */
+.image-show .row{
+    /* background-color: red; */
+    border: 1px solid red ;
+    height: 70vh;
+
+}
+.image-show .row .text-col{
+    padding: 0px 123px;
+
+}
+.image-show .row .text-col p{
+    line-height: 32px;
+    color: gray;
+    font-size: 20px;
+    font-weight: 200;
+}
