@@ -1,35 +1,87 @@
 *{
     box-sizing: border-box;
+  
 }
 /*  components */
 .sub-tittle{
     font-size: 35px;
     color: #1e272e;
     text-transform: capitalize;
-    font-family:  Lato, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    font-family: Arial, Helvetica, sans-serif ;
 }
 
 /* banner */
 .banner{
     height: 100vh;
-    background-color: red;
     background-image: url(../images/img/bg-masthead.jpg);
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     color: white;
+    position: relative;
     
 }
-.overlay{
-    background-color: rgba(0, 0, 0, 0.9);  
+.banner::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color:  #1c375e;
+    opacity: 0.5; 
+    height: 100vh;
+   min-width: 100%;
+
+    
+
+
 }
-.banner .tittle{
+.banner h1{
     font-size: 50px;
-    text-align: center;
+    /* text-align: center; */
 
 }
 .banner form input{
-    padding: 30px 100px 30px 30px;
+    display: inline-block;
+    width: 430px;
+    margin-left: 60px;
+    padding-top: 35px;
+    padding-bottom: 35px;
 }
+.banner form input::placeholder{
+    color: gray;
+    font-size: 25px;
+}
+.banner form button{
+    text-align: center;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 5px;
+}
+@media screen and (max-width:600px) {
+    .banner h1{
+        font-size: 35px;
+    
+    }
+    .banner form input{
+        display: inline-block;
+        width: 280px;
+        margin-left: 10px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .banner form button{
+        padding-top: 14px;
+        padding-bottom: 14px;
+        font-weight: 400;
+        font-size: 17px;
+        border-radius: 5px;
+    }
+    
+}
+
+
 
 /* *******icon section ************* */
 .icon-section{
@@ -44,6 +96,13 @@
     cursor: pointer;
 
 } 
+.icon-section i:hover{
+    color:rgb(4, 50, 114);
+    transform: scale(1.3);
+    transition-duration: .1s;
+    transition-timing-function: linear;
+    transition-property: all;
+}
 .icon-section p{
     padding: 0 4px;
     font-size: 20px;
@@ -61,19 +120,121 @@
     font-size: 20px;
     font-weight: 200;
 }
+.image-show img:hover{
+    transform: scale(1.01);
+    transition-duration: .1s;
+    transition-timing-function: linear;
+    transition-property: all;
+}
+@media screen and (max-width:600px) {
+    .image-show h3{
+        padding: 0px 40px;
+    }
+    .image-show p{
+        padding: 0px 40px;
+        line-height: 25px;
+        font-size: 15px;
+        font-weight: 200;
+    }
+    
+}
 /* **********testimonial************* */
 .testimonial{
     background-color: rgb(248, 249, 250);
-    height: 100vh;
+   min-height:  100vh;
+
 }
-.testimonial .container{
-    margin-top: 40px;
+.testimonial img:hover{
+    transform: scale(1.1);
+    transition-duration: .1s;
+    transition-timing-function: linear;
+    transition-property: all;
 }
-/* **************contact-us********* */
-.contact-us{
-    height: 50vh;
+
+/* ============== signup-box========== */
+.signup-box{
     background-image: url(/assets/images/img/bg-masthead.jpg);
     background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 60vh;
+    position: relative;
+    
 }
+/* overlay */
+.signup-box::before{
+        content: "";
+        position: absolute;
+        background-color: #1c375e;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        opacity: 0.5;
+}
+
+/* form */
+
+.signup-box form input{
+    display: inline-block;
+    width: 430px;
+    /* margin-left: 60px; */
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+.signup-box form input::placeholder{
+    color: gray;
+    font-size: 25px;
+}
+.signup-box form button{
+    text-align: center;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 5px;
+}
+ @media screen and (max-width:600px) {
+   
+    .signup-box form input{
+        display: inline-block;
+        width: 280px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .signup-box form button{
+        padding-top: 14px;
+        padding-bottom: 14px;
+        font-weight: 400;
+        font-size: 17px;
+        border-radius: 5px;
+    }
+    
+} 
+
+/* ============= footer section -======== */
+footer a{
+    text-decoration: underline;
+    font-size: 18px;
+}
+footer a:nth-child(even){
+    padding: 0 10px;
+}
+footer small{
+    padding-top: 10px;
+    font-size: 16px;
+}
+footer i:hover{
+    color: rgb(0, 90, 240);
+    cursor: pointer;
+    transform: scale(1.2);
+    transition-duration: .1s;
+    transition-timing-function: linear;
+    transition-property: all;
+    
+}
+
+
+
+
+
